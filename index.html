@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Aniversário Marinela Zacarias</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#000;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.convite{
+    position:relative;
+    width:100%;
+    max-width:900px;
+}
+
+.convite img{
+    width:100%;
+    display:block;
+}
+
+.botao{
+    position:absolute;
+    border-radius:20px;
+    transition:0.3s;
+}
+
+.botao:active{
+    filter:brightness(70%);
+}
+
+/* Confirmar Presença */
+.whatsapp{
+    left:17%;
+    top:74%;
+    width:30%;
+    height:7%;
+}
+
+/* Como Chegar */
+.localizacao{
+    left:53%;
+    top:74%;
+    width:30%;
+    height:7%;
+}
+
+</style>
+</head>
+
+<body>
+  
+  <audio id="musica" autoplay loop>
+    <source src="musica.mp3" type="audio/mpeg">
+    O seu navegador não suporta áudio.
+</audio>
+
+<div class="convite">
+
+<img src="convite.jpg" alt="Convite">
+
+<a
+class="botao whatsapp"
+href="https://wa.me/244930703565?text=Olá! Confirmo minha presença no aniversário da Marinela Zacarias."
+target="_blank">
+</a>
+
+<a
+class="botao localizacao"
+href="https://maps.app.goo.gl/BfscqtdZwszgdbkU7"
+target="_blank">
+</a>
+
+</div>
+
+<script>
+document.addEventListener('click', function () {
+    const musica = document.getElementById('musica');
+    if (musica) {
+        musica.play();
+    }
+}, { once: true });
+</script>
+
+</body>
+</html>
